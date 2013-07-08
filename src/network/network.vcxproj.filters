@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="precomp">
+      <UniqueIdentifier>{c8429814-f6d3-4cff-9251-41a29a57afa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection">
+      <UniqueIdentifier>{01d78525-9f4c-47b0-b96c-4ca1740da8a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection\server">
+      <UniqueIdentifier>{8bdc3813-4af1-49d8-9763-84cc5aba8a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection\client">
+      <UniqueIdentifier>{a4571385-b671-48c6-a204-2f19bc8208cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection\socket">
+      <UniqueIdentifier>{c67882bd-d6e9-417e-8d6b-2c040ee2de93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection\address">
+      <UniqueIdentifier>{8559c220-217d-4bcc-85fc-157cf733d2d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="precomp\precomp.h">
+      <Filter>precomp</Filter>
+    </ClInclude>
+    <ClInclude Include="network.h" />
+    <ClInclude Include="connection\connection.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="connection\client\client.h">
+      <Filter>connection\client</Filter>
+    </ClInclude>
+    <ClInclude Include="connection\server\server.h">
+      <Filter>connection\server</Filter>
+    </ClInclude>
+    <ClInclude Include="connection\socket\socket.h">
+      <Filter>connection\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="connection\address\address.h">
+      <Filter>connection\address</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="precomp\precomp.cpp">
+      <Filter>precomp</Filter>
+    </ClCompile>
+    <ClCompile Include="network.cpp" />
+    <ClCompile Include="connection\connection.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="connection\client\client.cpp">
+      <Filter>connection\client</Filter>
+    </ClCompile>
+    <ClCompile Include="connection\server\server.cpp">
+      <Filter>connection\server</Filter>
+    </ClCompile>
+    <ClCompile Include="connection\socket\socket.cpp">
+      <Filter>connection\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="connection\address\address.cpp">
+      <Filter>connection\address</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

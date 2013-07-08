@@ -1,0 +1,8 @@
+*.opensdf
+*.sdf
+*.suo
+*.user
+bin
+build
+lib
+src/ipch

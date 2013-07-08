@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="utils\assert\assert.cpp">
+      <Filter>utils\assert</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\log\log.cpp">
+      <Filter>utils\log</Filter>
+    </ClCompile>
+    <ClCompile Include="precomp\precomp.cpp">
+      <Filter>precomp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\assert\assert.h">
+      <Filter>utils\assert</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\log\log.h">
+      <Filter>utils\log</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp\precomp.h">
+      <Filter>precomp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="utils">
+      <UniqueIdentifier>{49604c2a-fb9f-4537-b57d-f1a065d820e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\assert">
+      <UniqueIdentifier>{2aecaee3-3733-45dd-b224-1c46b2b3b24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\log">
+      <UniqueIdentifier>{abd60862-f543-4f86-ab17-b2bf8f2c6a49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="precomp">
+      <UniqueIdentifier>{49c17990-7531-4146-ac90-178da84996d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
