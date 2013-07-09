@@ -10,12 +10,12 @@
 
 int main(int argc, char** argv)
 {
-    Acid::Network::Initialize();
+    Acid::Network network;
 
     if (std::string(argv[1]) == "-server")
     {
-        Acid::Server server(PROTOCOL_ID, TIMEOUT);
-        server.Start(Acid::Address(127, 0, 0, 1, PORT));
+        Acid::Server server(network, PROTOCOL_ID, TIMEOUT);
+        server.Start(PORT);
 
         std::size_t msg_cnt = 0;
 
@@ -23,10 +23,10 @@ int main(int argc, char** argv)
         {
             server.Update(0.033f);
 
-            unsigned char packet[512] = { 0 };
-            if (server.ReceivePacket(packet, 512) != 0)
+            std::vector<unsigned char> packet(512);
+            if (server.ReceivePacket(packet) != 0)
             {
-                std::cout << "Server received: " << packet << std::endl;
+                std::cout << "Server received: " << std::string(packet.begin(), packet.end()) << std::endl;
 
                 std::string msg = std::string("Server world: ") + boost::lexical_cast<std::string>(msg_cnt++);
                 server.SendPacket((const unsigned char*)msg.c_str(), msg.size());
@@ -61,8 +61,6 @@ int main(int argc, char** argv)
             Sleep(33);
         }
     }
-
-    Acid::Network::Shutdown();
 
     return (0);
 }

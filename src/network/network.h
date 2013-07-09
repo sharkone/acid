@@ -2,10 +2,11 @@
 
 namespace Acid
 {
-    class Network
+    class Network : public boost::noncopyable
     {
-    public:
-        static bool Initialize();
-        static bool Shutdown();
+        friend class Server;
+
+    private:
+        boost::asio::io_service m_Service;
     };
 }
