@@ -13,18 +13,14 @@
   <ItemGroup>
     <ClInclude Include="connection\address\address.h" />
     <ClInclude Include="connection\client\client.h" />
-    <ClInclude Include="connection\connection.h" />
     <ClInclude Include="connection\server\server.h" />
-    <ClInclude Include="connection\socket\socket.h" />
     <ClInclude Include="network.h" />
     <ClInclude Include="precomp\precomp.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="connection\address\address.cpp" />
     <ClCompile Include="connection\client\client.cpp" />
-    <ClCompile Include="connection\connection.cpp" />
     <ClCompile Include="connection\server\server.cpp" />
-    <ClCompile Include="connection\socket\socket.cpp" />
     <ClCompile Include="network.cpp" />
     <ClCompile Include="precomp\precomp.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

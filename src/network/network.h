@@ -4,6 +4,7 @@ namespace Acid
 {
     class Network : public boost::noncopyable
     {
+        friend class Client;
         friend class Server;
 
     private:

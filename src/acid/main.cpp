@@ -37,7 +37,7 @@ int main(int argc, char** argv)
     }
     else if (std::string(argv[1]) == "-client")
     {
-        Acid::Client client(PROTOCOL_ID, TIMEOUT);
+        Acid::Client client(network, PROTOCOL_ID, TIMEOUT);
         client.Start(Acid::Address(127, 0, 0, 1, PORT));
 
         std::size_t msg_cnt = 0;
@@ -49,10 +49,10 @@ int main(int argc, char** argv)
         {
             client.Update(0.033f);
 
-            unsigned char packet[512] = { 0 };
-            if (client.ReceivePacket(packet, 512) != 0)
+            std::vector<unsigned char> packet(512);
+            if (client.ReceivePacket(packet) != 0)
             {
-                std::cout << "Client received: " << packet << std::endl;
+                std::cout << "Client received: " << std::string(packet.begin(), packet.end()) << std::endl;
 
                 msg = std::string("Client world: ") + boost::lexical_cast<std::string>(msg_cnt++);
                 client.SendPacket((const unsigned char*)msg.c_str(), msg.size());
