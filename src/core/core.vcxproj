@@ -15,11 +15,13 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="timing\clock.cpp" />
     <ClCompile Include="utils\assert\assert.cpp" />
     <ClCompile Include="utils\log\log.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="precomp\precomp.h" />
+    <ClInclude Include="timing\clock.h" />
     <ClInclude Include="utils\assert\assert.h" />
     <ClInclude Include="utils\log\log.h" />
   </ItemGroup>

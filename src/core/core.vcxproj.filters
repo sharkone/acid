@@ -10,6 +10,9 @@
     <ClCompile Include="precomp\precomp.cpp">
       <Filter>precomp</Filter>
     </ClCompile>
+    <ClCompile Include="timing\clock.cpp">
+      <Filter>timing</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils\assert\assert.h">
@@ -20,6 +23,9 @@
     </ClInclude>
     <ClInclude Include="precomp\precomp.h">
       <Filter>precomp</Filter>
+    </ClInclude>
+    <ClInclude Include="timing\clock.h">
+      <Filter>timing</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +40,9 @@
     </Filter>
     <Filter Include="precomp">
       <UniqueIdentifier>{49c17990-7531-4146-ac90-178da84996d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timing">
+      <UniqueIdentifier>{785161ad-a8ce-4532-b0bb-8ba1df3f118c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
