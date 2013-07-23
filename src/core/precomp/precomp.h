@@ -8,7 +8,6 @@
 #include <boost/lexical_cast.hpp>
 #include <boost/noncopyable.hpp>
 
-#define _WIN32_WINNT            0x0501
 #define WIN32_LEAN_AND_MEAN
 
 #include <Windows.h>
