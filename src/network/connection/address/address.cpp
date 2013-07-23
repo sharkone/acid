@@ -41,8 +41,8 @@ namespace Acid
     {
         return (boost::lexical_cast<std::string>(m_Address >> 24 & 0xFF) + "." +
                 boost::lexical_cast<std::string>(m_Address >> 16 & 0xFF) + "." +
-                boost::lexical_cast<std::string>(m_Address >> 8  & 0xFF)  + "." +
-                boost::lexical_cast<std::string>(m_Address >> 0  & 0xFF)       + ":" +
+                boost::lexical_cast<std::string>(m_Address >> 8  & 0xFF) + "." +
+                boost::lexical_cast<std::string>(m_Address >> 0  & 0xFF) + ":" +
                 boost::lexical_cast<std::string>(m_Port));
     }
 
