@@ -24,6 +24,7 @@
     <ClInclude Include="timing\clock.h" />
     <ClInclude Include="utils\assert\assert.h" />
     <ClInclude Include="utils\log\log.h" />
+    <ClInclude Include="utils\maths\maths.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9BA7863D-BE41-4906-89FA-2842FE29CE45}</ProjectGuid>

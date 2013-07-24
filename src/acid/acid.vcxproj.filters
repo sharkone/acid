@@ -5,15 +5,24 @@
     <ClCompile Include="precomp\precomp.cpp">
       <Filter>precomp</Filter>
     </ClCompile>
+    <ClCompile Include="application\application.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="precomp">
       <UniqueIdentifier>{83e98e5a-f2c2-4f9c-b9fb-28ed2e643bc3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{a9f0241c-7e29-4e9a-8c8b-a3d43c357feb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="precomp\precomp.h">
       <Filter>precomp</Filter>
+    </ClInclude>
+    <ClInclude Include="application\application.h">
+      <Filter>application</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

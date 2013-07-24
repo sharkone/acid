@@ -27,6 +27,9 @@
     <ClInclude Include="timing\clock.h">
       <Filter>timing</Filter>
     </ClInclude>
+    <ClInclude Include="utils\maths\maths.h">
+      <Filter>utils\maths</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="utils">
@@ -43,6 +46,9 @@
     </Filter>
     <Filter Include="timing">
       <UniqueIdentifier>{785161ad-a8ce-4532-b0bb-8ba1df3f118c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\maths">
+      <UniqueIdentifier>{e7c625a2-8271-413a-be04-e8f2d559dfd5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
